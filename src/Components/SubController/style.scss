@@ -1,0 +1,37 @@
+.row{
+    color: black;
+    display: flex;
+    margin: 30px;
+    margin-top: 0;
+    position: relative;
+    bottom: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    justify-content: center;
+    &::-webkit-scrollbar{
+        display:none;
+    }
+    @media (max-width: 680px){
+        justify-content: start;
+    }
+    .m-card{
+        cursor: pointer;
+        margin: 0 10px;
+        overflow: hidden;
+        img{
+            width: 150px;
+            height: 100%;
+            transition: 1s;
+            @media (max-width: 950px){
+                width: 100px;
+                height: 100%;
+            }
+        }
+    }
+    .active_sub_bg{
+        background-color: yellow;
+    }
+    .active_sub_bg img{
+        transform: scale(.95);
+    }
+}

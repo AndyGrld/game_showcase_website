@@ -1,0 +1,55 @@
+.subhero {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.subhero .container1 {
+  padding: 20px;
+  display: grid;
+  align-items: center;
+}
+
+.subhero .container1 .title {
+  justify-self: center;
+  text-align: center;
+}
+
+.subhero .container1 h2 {
+  font-size: 60px;
+  margin: 0;
+  height: 150px;
+}
+
+.subhero .container1 p {
+  font-size: 18px;
+  text-shadow: 0px 0px 2px black;
+}
+
+.subhero .container1 .ratings {
+  height: 30px;
+}
+
+.subhero .container1 .viewbtn div {
+  position: absolute;
+}
+
+.subhero .container1 .viewbtn div button {
+  position: relative;
+  bottom: 25px;
+  background-color: goldenrod;
+  border: none;
+  padding: 5px 10px;
+  font-size: 15px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 0px white;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.subhero .container1 .viewbtn div button:hover {
+  background-color: white;
+  box-shadow: 4px 4px 0px goldenrod;
+  color: black;
+}

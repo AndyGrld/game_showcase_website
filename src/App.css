@@ -1,0 +1,27 @@
+:root {
+    --bg-color: #eee;
+    --text-color: #000;
+    --shadow-color: #333;
+    overflow-x: hidden;
+}
+*{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.light{
+    --bg-color: #eee;
+    --text-color: #000;
+    --shadow-color: #333;
+}
+.dark{
+    --bg-color: #111;
+    --text-color: #fff;
+    --shadow-color: #eee;
+}
+a{
+    text-decoration: none;
+}
+button{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}

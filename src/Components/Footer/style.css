@@ -1,0 +1,12 @@
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  font-weight: 400;
+}
+footer h5 {
+  color: black;
+}/*# sourceMappingURL=style.css.map */

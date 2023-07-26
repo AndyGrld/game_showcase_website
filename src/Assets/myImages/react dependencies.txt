@@ -1,0 +1,9 @@
+npm install swiper react-icons bootstrap react-scroll-parallax
+
+In case of error:
+1. npm cache clean --force
+2. rm -rf node_modules
+3. change react_scripts to version ^5.0.1
+4. npm install --legacy-peer-deps
+             or
+4. npm install --force

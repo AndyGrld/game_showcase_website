@@ -1,0 +1,36 @@
+@font-face{
+    font-family: 'DigitalClock';
+    src: url('../../Assets/digital-clock/digital-7.ttf') format('truetype');
+}
+.clock h3{
+    font-family: 'DigitalClock';
+    background-color: black;
+    color:cornflowerblue;
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    border: 5px solid gray;
+    border-radius: 3px;
+    text-shadow: 0 0 10px cornflowerblue, 0 0 15px cornflowerblue, 0 0 20px cornflowerblue;
+    animation: font-glow 2s linear infinite;
+}
+@keyframes font-glow {
+    0% {
+    text-shadow: 0 0 10px cornflowerblue, 0 0 15px cornflowerblue, 0 0 20px cornflowerblue;
+    }
+    25% {
+        text-shadow: none;
+    }
+    50% {
+    color: red;
+    text-shadow: 0 0 10px red, 0 0 15px red, 0 0 20px red
+    }
+    75% {
+        text-shadow: none;
+    }
+    100% {
+    color:cornflowerblue;
+    text-shadow: 0 0 10px cornflowerblue, 0 0 15px cornflowerblue, 0 0 20px cornflowerblue;
+    }
+}

@@ -1,0 +1,55 @@
+.card {
+  padding: 0px;
+  margin: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(148, 148, 148, 0.4);
+}
+
+.card:hover .bg_image,
+.card:focus .bg_image {
+  transform: scale(1.2);
+}
+
+.card .container {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card .container .bg_image {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  transition: all .5s;
+}
+
+.card .container p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: white;
+  font-size: 10px;
+}
+
+.card h2 {
+  color: black;
+  padding: 2px 5px;
+  margin: 0;
+  transition: .2s;
+}
+
+.card h2:hover {
+  color: gold;
+}
+
+.card h5, .card p {
+  font-size: 14px;
+  color: gray;
+  font-weight: 400;
+  margin: 0;
+  padding: 4px 5px;
+}

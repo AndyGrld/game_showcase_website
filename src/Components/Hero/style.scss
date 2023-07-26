@@ -1,0 +1,61 @@
+*{
+    color: white;
+}
+.hero{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    #hero-text{
+        font-size:60px;
+        padding: 20px;
+    }
+    .details{
+        padding: 20px;
+        font-size: 18px;
+    }
+    .hero-links{
+        a{
+            padding:0 20px;
+            position: relative;
+            transition: .5s;
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                left: 15px;
+                width: 80%;
+                height: 2px;
+                background-color: white;
+                transition: .2s;
+            }
+            &:hover{
+                color: goldenrod;
+            }
+            &:hover::after {
+                background-color: goldenrod;
+            }
+        }
+    }
+
+    .slider{
+        display: flex;
+        justify-content: center;
+        .circle{
+            width: 15px;
+            height: 15px;
+            background-color: transparent;
+            border: 1px solid white;
+            margin: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .active{
+            background-color: white;
+        }
+    }
+}
