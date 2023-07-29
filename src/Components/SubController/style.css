@@ -17,6 +17,8 @@
 @media (max-width: 680px) {
   .row {
     justify-content: start;
+    margin: 10px;
+    bottom: 30px;
   }
 }
 

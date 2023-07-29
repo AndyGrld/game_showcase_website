@@ -32,19 +32,19 @@ const SubController = () => {
         <SubHero backgroundImage={backgroundImage} title={imageTitle}/>
         <div className='row'>
             <div className={`m-card ${(id === 0) ? 'active_sub_bg' : ''}`} onClick={() => changeImageInfo(0)}>
-                <img src={images[0]} alt='background 1'/>
+                <img loading='lazy' src={images[0]} alt='background 1'/>
             </div>
             <div className={`m-card ${(id === 1) ? 'active_sub_bg' : ''}`} onClick={() => changeImageInfo(1)}>
-                <img src={images[1]} alt='background 2'/>
+                <img loading='lazy' src={images[1]} alt='background 2'/>
             </div>
             <div className={`m-card ${(id === 2) ? 'active_sub_bg' : ''}`} onClick={() => changeImageInfo(2)}>
-                <img src={images[2]} alt='background 3'/>
+                <img loading='lazy' src={images[2]} alt='background 3'/>
             </div>
             <div className={`m-card ${(id === 3) ? 'active_sub_bg' : ''}`} onClick={() => changeImageInfo(3)}>
-                <img src={images[3]} alt='background 4'/>
+                <img loading='lazy' src={images[3]} alt='background 4'/>
             </div>
             <div className={`m-card ${(id === 4) ? 'active_sub_bg' : ''}`} onClick={() => changeImageInfo(4)}>
-                <img src={images[4]} alt='background 5'/>
+                <img loading='lazy' src={images[4]} alt='background 5'/>
             </div>
         </div>
     </div>

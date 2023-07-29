@@ -20,6 +20,14 @@
 .subhero .container1 .title {
   justify-self: center;
   text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .subhero .container1 .title {
+    margin: 0 0 100px 0;
+    justify-self: start;
+  }
 }
 
 .subhero .container1 .title h2 {
@@ -30,12 +38,13 @@
 
 @media (max-width: 680px) {
   .subhero .container1 .title h2 {
+    position: absolute;
     justify-content: start;
     font-size: 50px;
   }
 }
 
-.subhero .container1 p {
+.subhero .container1 .description p {
   font-size: 18px;
   text-shadow: 0px 0px 2px black;
 }

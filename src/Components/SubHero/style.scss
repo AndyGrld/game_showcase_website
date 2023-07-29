@@ -13,19 +13,27 @@
         .title{
             justify-self: center;
             text-align: center;
+            width: 100%;
+            @media (max-width: 500px) {
+                margin: 0 0 100px 0;
+                justify-self: start;
+            }
             h2{
                 font-size: 60px;
                 margin:0;
                 height: 150px;
                 @media (max-width: 680px){
+                    position: absolute;
                     justify-content: start;
                     font-size: 50px;
                 }
             }
         }
-        p{
-            font-size: 18px;
-            text-shadow: 0px 0px 2px black;
+        .description{
+            p{
+                font-size: 18px;
+                text-shadow: 0px 0px 2px black;
+            }
         }
         .ratings{
             height: 30px;
