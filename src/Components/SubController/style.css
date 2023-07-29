@@ -26,6 +26,13 @@
   overflow: hidden;
 }
 
+@media (max-width: 500px) {
+  .row .m-card {
+    height: 100px;
+    margin: 0 5px;
+  }
+}
+
 .row .m-card img {
   width: 150px;
   height: 100%;
@@ -34,7 +41,7 @@
 
 @media (max-width: 950px) {
   .row .m-card img {
-    width: 100px;
+    width: 100%;
     height: 100%;
   }
 }
