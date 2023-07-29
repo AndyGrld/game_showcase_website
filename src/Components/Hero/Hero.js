@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../Navbar/Navbar'
-import spartan_female from '../../Assets/myImages/landscape/sparta_female.jpg';
+import games from '../../Assets/myImages/landscape/games_collage.jpg';
 import sparta from '../../Assets/myImages/landscape/sparta.jpg';
-import sifu from '../../Assets/myImages/landscape/sifu.png';
+import games2 from '../../Assets/myImages/landscape/games_collage_2.png';
 import './style.css'
 
 const Hero = () => {
-  const images = [sifu, spartan_female, sparta]
+  const images = [games, games2, sparta]
   const [imageIndex, setImageIndex] = useState(0)
   const [defaultBg, setDefaultBg] = useState(images[imageIndex]);
 
@@ -23,7 +23,7 @@ const Hero = () => {
   }, [imageIndex, images]);
 
   return (
-    <div className='hero' style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${defaultBg})` }}>
+    <div className='hero' style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${defaultBg})` }}>
         <Navbar/>
         <h1 id='hero-text'>RETURN OF THE SPARTANS</h1>
         <div className='details'>

@@ -5,7 +5,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items:center;
+    position: sticky;
     padding: 0 70px;
+    #nav_button{
+        display: none;
+    }
     p{
         font-weight: lighter;
     }
@@ -17,11 +21,30 @@ header{
         display: grid;
         grid-template-rows: (2, 1fr);
         font-size: 10px;
-
         .top{
             .auth{
                 margin: 10px 0;
                 text-align: right;
+                #social{
+                    color: gold;
+                    height: 25px;
+                    margin: 0 2.5px;
+                    border-radius: 50%;
+                    position: relative;
+                    top: 8px;
+                    padding: 0 5px;
+                    transition: .2s ease-in;
+                    &:hover{
+                        background-color: gold;
+                    }
+                }
+                p{
+                    display: none;
+                }
+                #space{
+                    display: inline;
+                    margin: 0 2.5px;
+                }
                 #login{
                     background-color: gold;
                     border-radius: 20px 0 0 20px;
@@ -63,6 +86,105 @@ header{
             .active{
                 color: gold;
             }
+        }
+    }
+
+    @media (max-width: 720px) {
+        z-index: 100;
+        position: relative;
+        #nav_button{
+            display: block;
+            position: absolute;
+            top: 30px;
+            cursor: pointer;
+            right: 30px;
+            z-index: 200;
+            width: 30px;
+            height: 30px;
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            right: -380px;
+            transition: .3s ease-in-out;
+            top:0;
+            width: 50vw;
+            background-color: rgb(46, 46, 46);
+            height: 100vh;
+            .top{
+                font-weight: lighter;
+                .auth{
+                    padding: 0 20px;
+                    position: absolute;
+                    position: left;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    width: max-content;
+                    text-align: left;
+                    grid-template-rows: repeat(3, 1fr);
+                    #social{
+                        display: inline;
+                        margin: 10px 0;
+                        padding: 0;
+                        font-size: 20px;
+                        top: 15px;
+                        border-radius: 0;
+                        &:hover{
+                            background-color: transparent;
+                        }
+                    }
+                    p{
+                        display: inline;
+                        font-size: 20px;
+                        padding: 0 5px;
+                        &:hover{
+                            color: gold;
+                        }
+                    }
+                    #login{
+                        margin-top: 3px;
+                        border: none;
+                    }
+                    #login, #signup{
+                        background-color: transparent;
+                        font-size: 20px;
+                        padding: 7px 0;
+                    }
+                    a:hover{
+                        color: gold;
+                    }
+                }
+            }
+            .links{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                width: 100%;
+                font-size: 20px;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 20px;
+                a{
+                    font-weight: lighter;
+                    padding: 7.5px 20px;
+                    transition: 0s;
+                    &:hover{
+                        color: gold;
+                    }
+                    &:hover::after{
+                        transform: scaleX(0);
+                    }
+                }
+                .active{
+                    color: black;
+                    font-weight: 400;
+                    background: gold;
+                }
+            }
+        }
+        .showNav{
+            right: 0;
         }
     }
 
