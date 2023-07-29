@@ -17,7 +17,7 @@ const Card = ({name, desc, categories, backgroundImageURL}) => {
                 <h2>{name}</h2>
             </a>
             <h5>PC, Consoles</h5>
-            <p>
+            <p className='description'>
                 {desc}
             </p>
         </div>

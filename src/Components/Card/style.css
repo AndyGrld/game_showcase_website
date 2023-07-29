@@ -19,6 +19,12 @@
   overflow: hidden;
 }
 
+@media (max-width: 500px) {
+  .card .container {
+    height: 200px;
+  }
+}
+
 .card .container .bg_image {
   background-position: center;
   background-size: cover;
@@ -42,6 +48,12 @@
   transition: .2s;
 }
 
+@media (max-width: 500px) {
+  .card h2 {
+    font-size: 20px;
+  }
+}
+
 .card h2:hover {
   color: gold;
 }
@@ -52,4 +64,8 @@
   font-weight: 400;
   margin: 0;
   padding: 4px 5px;
+}
+
+.card .description {
+  display: none;
 }

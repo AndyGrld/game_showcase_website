@@ -15,6 +15,9 @@
         height: 300px;
         position: relative;
         overflow: hidden;
+        @media (max-width: 500px) {
+            height: 200px;
+        }
         .bg_image{
         background-position: center;
         background-size: cover;
@@ -36,6 +39,9 @@
         padding: 2px 5px;
         margin: 0;
         transition: .2s;
+        @media (max-width: 500px) {
+            font-size: 20px;
+        }
         &:hover{
             color: gold;
         }
@@ -46,5 +52,8 @@
         font-weight: 400;
         margin: 0;
         padding: 4px 5px;
+    }
+    .description{
+        display: none;
     }
 }

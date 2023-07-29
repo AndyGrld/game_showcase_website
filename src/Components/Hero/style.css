@@ -18,9 +18,21 @@
   padding: 20px;
 }
 
+@media (max-width: 500px) {
+  .hero #hero-text {
+    font-size: 70px;
+  }
+}
+
 .hero .details {
   padding: 20px;
   font-size: 18px;
+}
+
+@media (max-width: 500px) {
+  .hero .details {
+    font-size: 140%;
+  }
 }
 
 .hero .hero-links a {
