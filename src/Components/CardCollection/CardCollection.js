@@ -9,13 +9,14 @@ import hollow_knight from '../../Assets/myImages/portrait/hollow_knight.png'
 import jump_force from '../../Assets/myImages/portrait/jump_force.jpg'
 import DDLC from '../../Assets/myImages/portrait/doki_doki.jpg'
 import hades from '../../Assets/myImages/portrait/hades.png'
+import among_us from '../../Assets/myImages/portrait/among_us.jpg'
 
 const CardCollection = () => {
 return (
         <div className='collection'>
         <Card name='Rise of the Tomb Raider' desc="Experience the excitement of Lara's
                 daring exploits and unravel captivating mysteries in this
-                unforgettable gaming journey." categories='ACTION, ADVENTURE'
+                unforgettable gaming journey." categories='Action, Adventure'
                 backgroundImageURL={tomb_raider}/>
         <Card name='Blur' desc='Immerse yourself in the captivating world of "Blur,"
                 an adrenaline-pumping racing game that takes high-speed action to a new level.' 
@@ -37,8 +38,10 @@ return (
         <Card name='Hades' desc='Prepare for intense battles, challenging encounters, and a captivating narrative as you strive to escape the realm of
                 the dead. Will you defy destiny and uncover the secrets of Hades?' categories='RPG, Action, Adventure'
                 backgroundImageURL={hades}/>
+        <Card name='Among Us' desc='' categories='Multiplayer' condition='on_mobile'
+                backgroundImageURL={among_us}/>
         </div>
-)
+        )
 }
 
 export default CardCollection

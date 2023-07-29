@@ -1,6 +1,7 @@
 .card {
   padding: 0px;
-  margin: 20px;
+  margin: 5px;
+  margin-bottom: 10px;
 }
 
 .card:hover {
@@ -21,7 +22,7 @@
 
 @media (max-width: 500px) {
   .card .container {
-    height: 200px;
+    height: 150px;
   }
 }
 
@@ -50,7 +51,7 @@
 
 @media (max-width: 500px) {
   .card h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -68,4 +69,8 @@
 
 .card .description {
   display: none;
+}
+
+.card .on_mobile {
+  border: 2px solid red;
 }

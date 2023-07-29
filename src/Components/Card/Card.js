@@ -1,13 +1,13 @@
 import React from 'react'
 import './style.css'
 
-const Card = ({name, desc, categories, backgroundImageURL}) => {
+const Card = ({name, desc, categories, condition, backgroundImageURL}) => {
     const cardStyle = {
         backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url(${backgroundImageURL})`,
         };
     
     return (
-        <div className='card'>
+        <div className={`card ${condition}`}>
             <a href='/'>
                 <div className='container'>
                     <div className='bg_image' style={cardStyle}>
