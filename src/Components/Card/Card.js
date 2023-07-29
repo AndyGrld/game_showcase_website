@@ -7,7 +7,7 @@ const Card = ({name, desc, categories, condition, backgroundImageURL}) => {
         };
     
     return (
-        <div className={`card ${condition}`}>
+        <div className={`card ${condition ? 'on_mobile' : ''}`}>
             <a href='/'>
                 <div className='container'>
                     <div className='bg_image' style={cardStyle}>

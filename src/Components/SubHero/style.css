@@ -7,7 +7,7 @@
 
 @media (max-width: 500px) {
   .subhero {
-    height: 75vh;
+    height: 80vh;
   }
 }
 
@@ -39,6 +39,7 @@
 @media (max-width: 680px) {
   .subhero .container1 .title h2 {
     position: absolute;
+    transform: translate(-10px, -15px);
     justify-content: start;
     font-size: 50px;
   }

@@ -57,7 +57,9 @@
     .description{
         display: none;
     }
-    .on_mobile{
-        border: 2px solid red;
+}
+.on_mobile{
+    @media (min-width: 800px) {
+        display: none;
     }
 }

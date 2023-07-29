@@ -71,6 +71,8 @@
   display: none;
 }
 
-.card .on_mobile {
-  border: 2px solid red;
+@media (min-width: 800px) {
+  .on_mobile {
+    display: none;
+  }
 }

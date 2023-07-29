@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     @media (max-width: 500px) {
-        height: 75vh;
+        height: 80vh;
     }
     .container1{
         padding:20px;
@@ -24,6 +24,7 @@
                 height: 150px;
                 @media (max-width: 680px){
                     position: absolute;
+                    transform: translate(-10px, -15px);
                     justify-content: start;
                     font-size: 50px;
                 }
