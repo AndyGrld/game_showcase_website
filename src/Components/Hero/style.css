@@ -20,8 +20,9 @@
 }
 
 .hero #hero-text {
-  font-size: 60px;
+  font-size: 50px;
   padding: 20px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 500px) {
@@ -39,6 +40,9 @@
 @media (max-width: 500px) {
   .hero .details {
     font-size: 20px;
+  }
+  .hero .details span {
+    display: none;
   }
 }
 
@@ -84,4 +88,5 @@
 
 .hero .slider .active {
   background-color: white;
+  transition: .5s ease-in;
 }

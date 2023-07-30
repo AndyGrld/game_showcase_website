@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useMemo } from 'react'
 import SubHero from '../SubHero/SubHero'
 import './style.css'
 import ac_brotherhood from '../../Assets/myImages/portrait/ac-brotherhood.png'
@@ -7,15 +7,15 @@ import injustice2 from '../../Assets/myImages/portrait/injustice.png'
 import nfs_heat from '../../Assets/myImages/portrait/nfs_heat.jpg'
 import watch_dogs from '../../Assets/myImages/portrait/watch_dogs.jpg'
 import ac_brotherhood_bg from '../../Assets/myImages/landscape/assassinscreedmirage.jpg'
-import sifu_bg from '../../Assets/myImages/landscape/sifu.png'
+import sifu_bg from '../../Assets/myImages/landscape/sifu.webp'
 import injustice2_bg from '../../Assets/myImages/landscape/injustice.jpg'
 import nfs_heat_bg from '../../Assets/myImages/landscape/nfs_heat.jpg'
 import watch_dogs_bg from '../../Assets/myImages/landscape/watch_dogs.jpg'
 
 const SubController = () => {
-    const images =  [watch_dogs, ac_brotherhood, sifu, injustice2, nfs_heat]
-    const back_images = [watch_dogs_bg, ac_brotherhood_bg, sifu_bg, injustice2_bg, nfs_heat_bg]
-    const titles = ['Watch Dogs Legion', 'Assassins Creed', 'Sifu', 'Injustice 2', 'Need for Speed Heat']
+    const images =  useMemo(() => [watch_dogs, ac_brotherhood, sifu, injustice2, nfs_heat], [])
+    const back_images = useMemo(() => [watch_dogs_bg, ac_brotherhood_bg, sifu_bg, injustice2_bg, nfs_heat_bg], [])
+    const titles = useMemo(() => ['Watch Dogs Legion', 'Assassins Creed', 'Sifu', 'Injustice 2', 'Need for Speed Heat'], [])
 
     const [backgroundImage, setBackgroundImage] = useState(back_images[0])
     const [imageTitle, setImageTitle] = useState(titles[0])

@@ -5,6 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Link to webpage
 Open [Gaming showcase webpage](https://game-showcase-website.vercel.app/) to view now.
 
+![Hero Image](./public/hero_image.png)
+
 ## Available Scripts
 
 In the project directory, you can run:

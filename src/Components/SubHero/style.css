@@ -50,6 +50,12 @@
   text-shadow: 0px 0px 2px black;
 }
 
+@media (max-width: 500px) {
+  .subhero .container1 .description p span {
+    display: none;
+  }
+}
+
 .subhero .container1 .ratings {
   height: 30px;
 }

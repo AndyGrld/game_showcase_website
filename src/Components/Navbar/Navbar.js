@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {FaFacebookF, FaSkype, FaYoutube, FaLinkedin, FaAmazon} from 'react-icons/fa';
+import {FaFacebookF, FaSkype, FaYoutube, FaLinkedin, FaBars, FaWindowClose} from 'react-icons/fa';
 import './style.css'
 
 const Navbar = () => {
@@ -12,8 +12,11 @@ const Navbar = () => {
 return (
     <header>
         <h1>GAA<span>Games</span></h1>
-        <div onClick={changeNavbar}><FaAmazon id='nav_button'/></div>
+        <div onClick={changeNavbar}>
+            <FaBars id='nav_button'/>
+        </div>
         <div className={`right ${(showNavbar) ? 'showNav' : ''}`}>
+            <FaWindowClose id='nav_button2'  onClick={changeNavbar}/>
             <div>
                 <div className='top'>
                     <div className='auth'>

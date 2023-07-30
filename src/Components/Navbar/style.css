@@ -10,7 +10,7 @@ header {
   padding: 0 70px;
 }
 
-header #nav_button {
+header #nav_button, header #nav_button2 {
   display: none;
 }
 
@@ -108,13 +108,12 @@ header .right .links .active {
     z-index: 100;
     position: relative;
   }
-  header #nav_button {
+  header #nav_button, header #nav_button2 {
     display: block;
     position: absolute;
     top: 30px;
     cursor: pointer;
     right: 30px;
-    z-index: 200;
     width: 30px;
     height: 30px;
   }
@@ -128,6 +127,11 @@ header .right .links .active {
     width: 50vw;
     background-color: #2e2e2e;
     height: 100vh;
+    box-shadow: -3px 0 5px black;
+  }
+  header .right #nav_button2 {
+    position: absolute;
+    right: 10px;
   }
   header .right .top {
     font-weight: lighter;
@@ -198,6 +202,9 @@ header .right .links .active {
     color: black;
     font-weight: 400;
     background: gold;
+  }
+  header .right .links .active:hover {
+    color: black;
   }
   header .showNav {
     right: 0;

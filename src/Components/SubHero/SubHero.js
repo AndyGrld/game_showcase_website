@@ -1,7 +1,9 @@
 import React from 'react'
 import './style.css'
+import {FaStar} from 'react-icons/fa';
 
 const SubHero = ({backgroundImage, title}) => {
+
   return (
     <div className='subhero' style={{background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(${backgroundImage}) center/cover no-repeat`}}>
       <div className='container1'>
@@ -12,12 +14,20 @@ const SubHero = ({backgroundImage, title}) => {
         </div>
         <div className='description'>
           <p>
-            Doki Doki Literature Club is an immersive game blending romance, suspense, and psychological
-            horror. It challenges reality and explores the power of choice, leaving players captivated and questioning.
+          Dive into a realm of excitement and strategy as you take on
+          various roles, from brave heroes and cunning adventurers to skilled athletes and fierce warriors.
+          <span>
+            Immerse yourself in stunning landscapes,richly detailed
+            environments, and breathtaking graphics that bring the game to life.
+          </span>
           </p>
         </div>
         <div className='ratings'>
-          <p>Star</p>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
+            <FaStar/>
         </div>
         <div className='release'>
           <p>January 23, 2016</p>
